@@ -17,6 +17,10 @@ section {
     position: absolute;
 }
 
+section img {
+    width: 100%;
+}
+
 .logo {
     width: 200px;
     height: 200px;
