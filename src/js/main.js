@@ -2,7 +2,6 @@
 import "../css/main.css";
 import "./baidu.js";
 import "../lib/wechat-mobile-screen-adapt-640.js";
-import "./set-weixin-share.js";
 import $ from '../lib/third/jquery.min.js';
 
 // 主代码写在这里

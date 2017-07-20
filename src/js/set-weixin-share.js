@@ -1,6 +1,7 @@
 // 微信分享设置
-import wx from "react-jweixin";
+import "../lib/third/jweixin-1.0.0.min.js";
 
+var wx = window.wx;
 var track = /trackingid=[\w]+/.exec(location.href);
 if(track){
     track = track[0];
