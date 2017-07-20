@@ -1,3 +1,11 @@
+@charset "UTF-8";
+
+@import "h5-reset.css";
+@import "portrait.css";
+@import "common.css";
+@import "common-animation.css";
+@import "tools.css";
+
 /* 当前项目的css样式 */
 h1 {
     color: blue;

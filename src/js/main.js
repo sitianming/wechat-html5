@@ -1,8 +1,11 @@
-// 主js
-import "../lib/wechat-mobile-screen-adapt-640.js";
-import "../css/h5-reset.css";
+// 主js文件
 import "../css/main.css";
+import "./baidu.js";
+import "../lib/wechat-mobile-screen-adapt-640.js";
+import "./set-weixin-share.js";
+import $ from '../lib/third/jquery.min.js';
 
-
-
-console.log("main.js");
+// 主代码写在这里
+$(function(){
+    console.log("main.js");
+});

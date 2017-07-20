@@ -2,7 +2,7 @@
     设置viewport
  */
 
-var $ = require("./jquery.min.js");
+var $ = require("./third/jquery.min.js");
 
 (function(){
     if(typeof($)===undefined){
