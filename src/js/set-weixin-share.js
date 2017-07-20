@@ -1,7 +1,6 @@
 // 微信分享设置
-import "../lib/third/jweixin-1.0.0.min.js";
+import wx from "weixin-js-sdk";
 
-var wx = window.wx;
 var track = /trackingid=[\w]+/.exec(location.href);
 if(track){
     track = track[0];
