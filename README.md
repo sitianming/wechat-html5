@@ -12,7 +12,7 @@
     2，一个套基础的webpack配置
     3，便利的提供基本的js库（reset.css，适配js，微信分享js，jquery等，预加载js,fastclick）
     4，h5项目上线流程，注意事项的说明
-    5，项目源代码用es5编写，但是支持使用es6语法
+    5，支持使用es6语法
 
 ## 目录简介
 
@@ -28,10 +28,14 @@
 
 ## 使用方法
 
-    1, 本地开发，在项目根目录执行 `npm run dev`
-    2, 发布到线上，和以前相同，push到deploy分支即可
+    1, 安装npm包，在根目录执行 `npm install`
+    2, 本地开发：在项目根目录执行 `npm run dev`，首页链接：`http://localhost:8080/`
+    3, 发布到线上，和以前相同，push到deploy分支即可
 
 ### 剩余bug
 
     1,bundle.js放到<header>里面
     6,打包文件，比如字体文件，视频，音频
+    7,引入预加载图片
+    8,setNewShare
+    9,支持多页面（不同的html）

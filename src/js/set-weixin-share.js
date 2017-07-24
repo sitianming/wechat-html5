@@ -63,28 +63,33 @@ wx.ready(function() {
         cancel: function() {}
     });
 });
+
+
 //  根据不同条件，设置不同的分享标题，描述
-// window.setNewShare = function(){
-//     // todo:未完成
-//     wx.onMenuShareTimeline({
-//         title: wx_share_timeline_title,
-//         link: wx_share_link,
-//         imgUrl: wx_share_img,
-//         success: function() {
-//             //分享成功
-//         },
-//         cancel: function() {}
-//     });
-//
-//     wx.onMenuShareAppMessage({
-//         title: wx_share_message_title,
-//         desc: wx_share_message_desc,
-//         link: wx_share_link,
-//         imgUrl: wx_share_img,
-//         type: 'link',
-//         success: function() {
-//             //分享成功
-//         },
-//         cancel: function() {}
-//     });
-// };
+const setNewShare = function(){
+    // todo:未完成
+
+    wx.onMenuShareTimeline({
+        title: wx_share_timeline_title,
+        link: wx_share_link,
+        imgUrl: wx_share_img,
+        success: function() {
+            //分享成功
+        },
+        cancel: function() {}
+    });
+
+    wx.onMenuShareAppMessage({
+        title: wx_share_message_title,
+        desc: wx_share_message_desc,
+        link: wx_share_link,
+        imgUrl: wx_share_img,
+        type: 'link',
+        success: function() {
+            //分享成功
+        },
+        cancel: function() {}
+    });
+};
+
+export default setNewShare;
