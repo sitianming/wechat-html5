@@ -7,6 +7,20 @@
 @import "tools.css";
 
 /* 当前项目的css样式 */
+@font-face {
+    font-family: 'myfont';
+    src: url('../assets/fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+    src:
+        url('../assets/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/fontawesome-webfont.woff') format('woff'),
+        url('../assets/fonts/fontawesome-webfont.ttf')  format('truetype'),
+        url('../assets/fonts/fontawesome-webfont.svg#myfont') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: "myfont";
+}
+
 h1 {
     color: blue;
 }
@@ -27,5 +41,38 @@ section img {
     position: absolute;
     top: 20px;
     left: 20px;
+}
+
+.logo-background {
     background-image: url("../images/logo.jpg");
+}
+
+video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #000;
+    color: #fff;
+}
+
+.percent {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
 }
